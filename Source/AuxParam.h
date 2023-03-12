@@ -72,7 +72,7 @@ namespace AuxPort
 		{
 			for (uint32_t i = 0; i < parameterMap.size(); i++)
 			{
-				jassert(parameterMap[i].getParameterName() == floatParam->name);
+				jassert(parameterMap[i].getParameterName() != floatParam->name);
 				DBG("Try using a Different Parameter Name");
 			}
 			floatParameters.push_back(floatParam);
